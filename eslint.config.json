@@ -5,16 +5,13 @@
         "jquery": true
     },
     "rules": {
-        "quotes": 0,
+        "jsx-quotes": [2, "prefer-double"],
         "no-trailing-spaces": 0,
         "eco-list": 0,
         "no-unused-vars": 0,
         "no-underscore-dangle": 0,
         "no-alert": 0,
-        "no-lone-blocks": 0
-    },
-    "globals": {
-        jQuery: true,
-        $: true
+        "no-lone-blocks": 0,
+        "react/require-extension": "off"
     }
 }
