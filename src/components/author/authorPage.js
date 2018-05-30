@@ -4,7 +4,7 @@ import React from 'react';
 import AuthorApi from '../../api/authorApi';
 import AuthorList from './authorList';
 
-export default class Authors extends React.Component {
+export default class AuthorPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

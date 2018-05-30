@@ -1,6 +1,7 @@
 "use strict";
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class AuthorList extends React.Component {
     render() {
@@ -16,8 +17,10 @@ export default class AuthorList extends React.Component {
             <div>
                 <table className="table">
                     <thead>
-                        <th>Id</th>
-                        <th>Name</th>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {this.props.authors.map(createAuthorRow, this)}
@@ -26,4 +29,8 @@ export default class AuthorList extends React.Component {
             </div>
         );
     }
+}
+
+AuthorList.propTypes = {
+    authors: PropTypes.array.isRequired
 }
